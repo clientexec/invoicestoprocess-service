@@ -80,7 +80,7 @@ class PluginInvoicestoprocess extends ServicePlugin
         if($this->settings->get('plugin_invoicestoprocess_E-mails') != "" && $count > 0){
             $destinataries = explode("\r\n", $this->settings->get('plugin_invoicestoprocess_E-mails'));
             $mailGateway = new NE_MailGateway();
-            $EmailMessage = $this->user->lang('There are currently %s invoice(s) awaithing to be processed.', $count);
+            $EmailMessage = $this->user->lang('There are currently %s invoice(s) waiting to be processed.', $count);
             if($includeDeclined){
                 $EmailMessage .= ' '.$this->user->lang('Invoices with previously declined transactions are also taken in count.');
             }else{
