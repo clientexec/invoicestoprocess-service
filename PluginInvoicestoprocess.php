@@ -20,7 +20,7 @@ class PluginInvoicestoprocess extends ServicePlugin
             ),
             lang('Enabled')       => array(
                 'type'          => 'yesno',
-                'description'   => lang('When enabled, an email will be sent to the provided email addresses, notifying about how many invoices needs to be processed today. If there are no invoices needing to be processed today, no email will be sent. <br><b>NOTE:</b> Only run once per day to avoid duplicate E-mails.'),
+                'description'   => lang('When enabled, an email will be sent to the provided email addresses, notifying about how many invoices need to be processed today. If there are no invoices needing to be processed today, no email will be sent. <br><b>NOTE:</b> Only run once per day to avoid duplicate E-mails.'),
                 'value'         => '0',
             ),
             lang('Include invoices previously declined')       => array(
